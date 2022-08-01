@@ -38,8 +38,5 @@ let ancho = Number(prompt("Ingrese un número(ancho)"));
 
 let resultado = 0;
 
-document.write(`<p>El alto del retángulo es ${alto.mostarAltura}</p>`);
-document.write(`<p>El ancho del retángulo es ${ancho.mostarAncho}</p>`);
-
 valores.area(resultado);
 valores.perimetro(resultado);
