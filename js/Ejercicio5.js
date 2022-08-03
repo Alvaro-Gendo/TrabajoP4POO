@@ -52,7 +52,19 @@ class Persona {
   }
 
   mostrarGeneracion(){
-    
+    if(this.fechaDeNacimiento >= 1930 && this.fechaDeNacimiento <= 1948){
+      document.write(`${this.nombre} pertenece a la Silent Gerenarición, su rasgo carateristico es Austeridad.<br>`)
+    }else if(this.fechaDeNacimiento >= 1949 && this.fechaDeNacimiento <= 1968){
+      document.write(`${this.nombre} pertenece a la Baby Boom, su rasgo carateristico es Ambición.<br>`)
+    }else if(this.fechaDeNacimiento >= 1969 && this.fechaDeNacimiento <= 1980){
+      document.write(`${this.nombre} pertenece a la Generación X, su rasgo carateristico es Obsesión por el éxito.<br>`)
+    }else if(this.fechaDeNacimiento >= 1981 && this.fechaDeNacimiento <= 1993){
+      document.write(`${this.nombre} pertenece a la Generación Y(millennials), su rasgo carateristico es Frustración.<br>`)
+    }else if(this.fechaDeNacimiento >= 1994 && this.fechaDeNacimiento <= 2010){
+      document.write(`${this.nombre} pertenece a la Generación Z, su rasgo carateristico es Irreverencia.<br>`)
+    }else{
+      document.write("Fecha erronea")
+    }
   }
 
   mayorDeEdad(){
@@ -78,9 +90,9 @@ class Persona {
 
 let personas = []
 
-let alvaro = new Persona("Alvaro Ruiz", 27, Math.floor(Math.random()* (99999999 - 11111111)+ 11111111), "Masculino", "62kg", "1.60m","07/06/1995")
-let sofia = new Persona("Sofia Ruiz", 33, Math.floor(Math.random()* (99999999 - 11111111)+ 11111111), "Femenino", "58kg", "1.60m", "24/11/1988")
-let facundo = new Persona("Facundo Ojeda", 12, Math.floor(Math.random()* (99999999 - 11111111)+ 11111111), "Masculino", "60kg", "1.60m", "30/12/2010")
+let alvaro = new Persona("Alvaro Ruiz", 27, Math.floor(Math.random()* (99999999 - 11111111)+ 11111111), "Masculino", "62kg", "1.60m",1995)
+let sofia = new Persona("Sofia Ruiz", 33, Math.floor(Math.random()* (99999999 - 11111111)+ 11111111), "Femenino", "58kg", "1.60m",1988)
+let facundo = new Persona("Facundo Ojeda", 12, Math.floor(Math.random()* (99999999 - 11111111)+ 11111111), "Masculino", "60kg", "1.60m",2010)
 
 personas.push(alvaro)
 personas.push(sofia)
@@ -91,4 +103,8 @@ for (let i = 0; i < personas.length; i++) {
 }
 for (let i = 0; i < personas.length; i++) {
     personas[i].mostrarDatos();
+}
+
+for(let i = 0;i < personas.length; i++){
+  personas[i].mostrarGeneracion();
 }
