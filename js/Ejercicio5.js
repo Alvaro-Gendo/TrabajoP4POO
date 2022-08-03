@@ -92,9 +92,9 @@ class Persona {
 
 let personas = []
 
-let alvaro = new Persona("Alvaro Ruiz", 27, Math.floor(Math.random()* (99999999 - 11111111)+ 11111111), "Masculino", "62kg", "1.60m",1995)
-let sofia = new Persona("Sofia Ruiz", 33, Math.floor(Math.random()* (99999999 - 11111111)+ 11111111), "Femenino", "58kg", "1.60m",1988)
-let facundo = new Persona("Facundo Ojeda", 12, Math.floor(Math.random()* (99999999 - 11111111)+ 11111111), "Masculino", "60kg", "1.60m",2010)
+let alvaro = new Persona("Alvaro Ruiz", 27, Math.floor(Math.random()* (99999999)), "Masculino", "62kg", "1.60m",1995)
+let sofia = new Persona("Sofia Ruiz", 33, Math.floor(Math.random()* (99999999)), "Femenino", "58kg", "1.60m",1988)
+let facundo = new Persona("Facundo Ojeda", 12, Math.floor(Math.random()* (99999999)), "Masculino", "60kg", "1.60m",2010)
 
 personas.push(alvaro)
 personas.push(sofia)
