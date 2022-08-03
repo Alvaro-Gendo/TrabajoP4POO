@@ -62,6 +62,8 @@ class Persona {
       document.write(`${this.nombre} pertenece a la Generación Y(millennials), su rasgo carateristico es Frustración.<br>`)
     }else if(this.fechaDeNacimiento >= 1994 && this.fechaDeNacimiento <= 2010){
       document.write(`${this.nombre} pertenece a la Generación Z, su rasgo carateristico es Irreverencia.<br>`)
+    }else if(this.fechaDeNacimiento >= 2011){
+      document.write(`${this.nombre} pertenece a la Generación de Cristal, su rasgo carateristico es Ofendido.<br>`)
     }else{
       document.write("Fecha erronea")
     }
