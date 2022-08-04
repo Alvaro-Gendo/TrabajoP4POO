@@ -45,7 +45,7 @@ class Libro {
 
 let libros = [];
 
-let libro1 = new Libro("9788418008504","La llamada de Cthukhu","H.P Lovecraft",96);
+let libro1 = new Libro("9788418008504","La llamada de Cthulhu","H.P Lovecraft",96);
 let libro2 = new Libro("9788417430702","En las montañas de la locura","H.P Lovecraft",240);
 
 libros.push(libro1);
